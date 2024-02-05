@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Online</title>
+</head>
+<body>
+    <nav>
+        <div id="klocka">
+            
+        </div>
+    </nav>
+    <br>
+
+    <h1 id="dashboardName">Ahmed Tememi Dashboard</h1>
+    <input type="text" id="dashboardNameText">
+
+    <br>
+    <section>
+
+        <div class="container">
+            <div class="square">
+
+                <p>Snabblänkar</p>
+                <div class="linkWrapper">
+                    <div class="iconcontainer" onclick="iconcontainer()">
+                        <i class="fa-brands fa-google" style="color: #df452a;"></i>
+                        <p>Google</p>
+                    </div> 
+    
+                    <div class="iconcontainer1" onclick="iconcontainer1()">
+                        <i class="fa-brands fa-linkedin" style="color: #6698f0;"></i>
+                        <p>Linkedin</p>
+                    </div>
+    
+                    <div class="iconcontainer2" onclick="iconcontainer2()">
+                        <i class="fa-brands fa-youtube" style="color: #de5454;"></i>
+                        <p>Youtube</p>
+    
+
+                    </div>
+    
+                    <div class="iconcontainer3" onclick="iconcontainer3()">
+                        <i class="fa-brands fa-github" style="color: #000000;"></i>
+                        <p>Github</p>
+                    </div>
+                </div>
+                
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <input type="text" id="titleText" placeholder="Title">
+                        <input type="text" id="linkText" placeholder="Link">
+                        <button onclick="setLink()">Add Link</button>
+                    </div>
+                    
+                </div>
+
+                <button id="addPageButton">Lägg till sida</button>
+            </div>
+
+            <div class="square">
+                <p>Dagens väder</p>
+
+                <div class="iconcontainer4">
+                    <p>Stockholm</p>
+                </div>
+
+                <div class="iconcontainer5">
+                    <p>Tokyo</p>
+
+                </div>
+
+                <div class="iconcontainer6">
+                    <p>Bagdad</p>
+                </div>
+
+                <div class="MyGeolocation">
+                    <p class="Stad"></p>
+                </div>
+            </div>
+
+            <div class="square" onclick="square()">
+                <div id="add">
+                    
+                </div>
+            </div>
+
+            <div class="square">
+                <p>Antekningar</p>
+
+                <div class="iconcontainer7" >
+                    <textarea id="anteckningarText" rows="4" cols="50" placeholder=" Text"></textarea> 
+                </div>
+                <button id="sparaknapp">Spara </button>
+            </div>
+    </section>
+
+    <br>
+
+    <section1>
+        <div id="changeImg"  onclick="Changeimg()">
+            <p>byt backgrund bild</p>
+            <i class="fa-solid fa-repeat"></i>
+            
+        </div>
+    </section1>
+
+    <script src="index.js"></script>
+</body>
+</html>
